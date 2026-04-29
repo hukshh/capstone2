@@ -1,44 +1,96 @@
-# 🛒 E-commerce Sales Analysis Capstone Project
+# 📊 Retail Sales Analysis Dashboard
+
+## 📌 Project Overview
+This project analyzes retail sales data to identify trends, high-performing products, customer segments, and regional performance. The goal is to support business decision-making through data-driven insights.
+
+---
 
 ## 🎯 Problem Statement
-In the competitive e-commerce landscape, understanding sales trends and customer behavior is crucial. This project addresses the need for clear, data-driven insights to optimize sales strategies, manage inventory efficiently, and identify high-growth opportunities.
+How can sales data be analyzed to identify key revenue drivers, seasonal trends, and areas for business improvement?
 
-## 📊 Dataset Description
-The dataset used in this project contains transaction-level sales data, including:
-- **Order Details**: Dates, IDs, and shipping modes.
-- **Customer Info**: Names, segments, and geographical locations.
-- **Product Info**: Categories, sub-categories, and specific product names.
-- **Financials**: Sales figures for each transaction.
+---
 
-## 🛠️ Tools Used
-- **Python**: Primary language for data processing.
-- **Pandas**: Used for data cleaning, transformation, and normalization.
-- **Tableau**: Used for creating interactive dashboards and final visualizations.
+## 📂 Dataset
+* **Source**: Public Superstore Dataset
+* **Rows**: 9,800+
+* **Columns**: 18
+* **Features**: Sales, Category, Segment, Region, Order Date
 
-## 🔄 Project Workflow
-1. **Data Loading**: Importing raw CSV data into a Python environment.
-2. **Data Cleaning**: Handling missing values (e.g., Postal Codes) and normalizing column names.
-3. **Date Processing**: Converting strings to datetime objects and extracting months/years.
-4. **Data Export**: Saving the cleaned dataset as `cleaned_data.csv`.
-5. **Visualization**: Importing cleaned data into Tableau for final dashboarding.
+---
 
-## 📁 Project Structure
+## ⚙️ Workflow
+
+### 1. Data Cleaning (Python)
+* Handled missing values (e.g., Postal Codes)
+* Converted date formats for time-series analysis
+* Standardized column names (lowercase, underscores)
+* Created new features (month, year) for granular analysis
+
+### 2. Exploratory Data Analysis
+* Analyzed sales trends over time to identify seasonality
+* Compared performance across categories and segments
+* Evaluated sub-category profitability
+
+### 3. Tableau Dashboard
+* Created interactive visualizations for stakeholders
+* Developed maps for regional performance tracking
+* Built segment-based revenue breakdown charts
+
+---
+
+## 📊 Key Insights
+* **Top Category**: Technology is the highest revenue-generating category.
+* **Product Leaders**: Phones and Chairs dominate sub-category sales.
+* **Segment Breakdown**: The Consumer segment contributes the majority of revenue.
+* **Geography**: Sales are heavily concentrated in regions like California and New York.
+* **Seasonality**: Trends show peak demand in specific months, suggesting holiday impact.
+
+---
+
+## 💡 Recommendations
+* **Inventory Focus**: Prioritize high-performing products like Phones and Chairs.
+* **Growth Areas**: Improve marketing for low-performing categories such as Appliances.
+* **Expansion**: Target underperforming regions with specific promotional campaigns.
+* **B2B Strategy**: Strengthen the Corporate customer segment to diversify revenue streams.
+
+---
+
+## 📁 Repository Structure
 ```text
 capstone-project/
-├── data/              # Raw and cleaned data files
-├── notebooks/         # Python scripts for data processing
-├── dashboard/         # Tableau workbook and visualizations
-├── reports/           # Documentation and insights reports
-├── README.md          # Project overview (this file)
-└── requirements.txt   # Python dependencies
+├── data/
+│   ├── raw/                   # Original unedited dataset
+│   └── processed/             # Cleaned dataset ready for analysis
+├── notebooks/
+│   ├── 02_cleaning.ipynb      # Data cleaning and preparation
+│   ├── 03_eda.ipynb           # Exploratory data analysis
+│   └── 04_statistical_analysis.ipynb # Deeper statistical insights
+├── tableau/
+│   ├── screenshots/           # Dashboard visual exports
+│   └── dashboard_links.md     # Links to Tableau Public
+├── docs/
+│   └── data_dictionary.md     # Column definitions and types
+├── reports/
+│   └── final_report.md        # Detailed executive summary
+├── README.md                  # Project overview (this file)
+└── requirements.txt           # Python dependencies
 ```
 
-## 🔍 Key Insights
-- **Seasonality**: Sales peak during specific months, indicating a need for seasonal marketing.
-- **Categories**: The "Technology" category often leads in revenue, while "Office Supplies" leads in volume.
-- **Efficiency**: Standard shipping is the most common mode, but Second Class shows higher growth.
+---
 
-## 🚀 How to Run
-1. Install dependencies: `pip install -r requirements.txt`
-2. Run the cleaning script: `python3 notebooks/analysis.py`
-3. View the results in `data/cleaned_data.csv` and `reports/insights.md`
+## 🔗 Links
+* **Tableau Dashboard**: [View Live Dashboard](https://public.tableau.com/app/profile/ovais.koite/viz/RetailSalesAnalysis_1714392435/ExecutiveSummary)
+* **GitHub Repository**: [Project Repo](https://github.com/ovaiskoite/capstone-project)
+
+---
+
+## 🧠 Tools Used
+* **Python**: Pandas, Matplotlib, Seaborn
+* **Tableau Public**: Data Visualization & Dashboarding
+* **Jupyter**: Interactive Analysis Environment
+
+---
+
+## 👨‍💻 Author
+**Ovais Koite**
+*Data Analyst*
