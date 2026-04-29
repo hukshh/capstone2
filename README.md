@@ -66,7 +66,7 @@ capstone-project/
 │   ├── 03_eda.ipynb           # Exploratory data analysis
 │   └── 04_statistical_analysis.ipynb # Deeper statistical insights
 ├── tableau/
-│   ├── screenshots/           # Dashboard visual exports
+│   ├── screenshots/           # Full dashboard and individual component views
 │   └── dashboard_links.md     # Links to Tableau Public
 ├── docs/
 │   └── data_dictionary.md     # Column definitions and types
